@@ -37,6 +37,10 @@
     .feature .symbol{font-size:28px}
     .feature h3{color:#e4bd6b;margin:12px 0 7px}
     .feature p{color:#aaa;font-size:14px}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .gallery img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;border-radius:15px;border:1px solid #594324;box-shadow:0 12px 35px #0008}
+    @media(max-width:700px){.gallery{grid-template-columns:1fr}}
     .download{text-align:center;background:linear-gradient(135deg,#17130d,#0c0c0c);border:1px solid #594324;border-radius:20px;padding:45px 20px}
     .download p{color:#bbb;margin:12px auto 22px;max-width:580px}
     footer{padding:28px 0;text-align:center;color:#777;font-size:13px}
@@ -77,7 +81,20 @@
     </div>
   </section>
 
-  <section class="section" id="features">
+  
+<section class="section" id="gallery">
+  <div class="wrap">
+    <h2>SULESH CHAT Gallery</h2>
+    <p class="sub">Explore the SULESH CHAT experience.</p>
+    <div class="gallery">
+      <img src="images/sulesh-chat-01.jpg" alt="SULESH CHAT preview 1" loading="lazy">
+      <img src="images/sulesh-chat-02.jpg" alt="SULESH CHAT preview 2" loading="lazy">
+      <img src="images/sulesh-chat-03.jpg" alt="SULESH CHAT preview 3" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
     <div class="wrap">
       <h2>Everything in one place</h2>
       <p class="sub">Explore the tools designed to bring your conversations and communities together.</p>
